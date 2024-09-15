@@ -51,6 +51,7 @@ public class BaseDados {
 	}
 	
 	public static boolean addAdocao(Proprietario proprietario, String tipoAnimal) throws AnimalException, AdocaoException, CPFException {
+		System.out.println(tipoAnimal);
 		if (proprietario == null || tipoAnimal == null) {
 			throw new AdocaoException("Erro ao realizar adoção! Entre em contato com (87) 99999-9999");
 		}

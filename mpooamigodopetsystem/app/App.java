@@ -1,5 +1,6 @@
 package app;
 
+import controller.AdocaoController;
 import controller.IndexController;
 import model.BaseDados;
 import view.AdocaoView;
@@ -16,9 +17,6 @@ public class App {
 		AdocaoView adocaoView = new AdocaoView();
 		
 		IndexController indexController = new IndexController(indexView, adocaoView);
-		
-		
-		
-		
+		AdocaoController adocaoController = new AdocaoController(adocaoView);
 	}
 }
